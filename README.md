@@ -1,76 +1,74 @@
-# Titulo de la clase
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
-## 1. Subtítulos
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+# INTRODUCCIÓN A LA DINÁMICA DE SISTEMAS
+Un sistema es una relación de elementos que durante el intercambio de su naturaleza en un escenario contextualizado desencadenan un objetivo ya sea controlado o inercial, cuando se observa un sistema se aprecia su desarrollo de manera consecuente generando un algoritmo con variables dependientes y/o independientes, estos se rigen por las leyes de su desarrollo; en una vista general de un sistema se aprecia unas variables de entrada que al ser expuestas al desarrollo se alteran generando unas nuevas variables que serán las de salida.
 
-## 2. Definiciones
-Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
->🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
+## 1. Dividiremos los sitemas en 2 tipos:
 
-## 3. Subsecciones
-Las subsecciones pueden utilizarse para sub dividir ciertos temas que se tienen en clases, por ejemplo si se está trabajandolos conversores D/A, puede ser necesario subdividir este en circuito de resistencias ponderadas y circuito de escalera R2R. 
-### 3.1. Título de subsecciones
-Para la creación de estas subsecciones debe utilizar un tamaño de letra más pequeño, por lo tanto utilice la etiqueta '###' 
-### 3.2. Numeración de subsecciones
-Siga la numeración de la sección seguida de un punto y luego el número de la subsección.
+### 1.1 Sistemas estáticos
+Estos se carácterizan basicamente por no cambiar su comportamiento con el tiempo, es decir, las variables que se observan en su naturaleza no interactuan entre si de manera significativa con un fenómeno que cambie su comportamiento, esto lo hace completamente predecible ya que no esta sujeto a cambio evidente.
 
-## 4. Ejemplos
-Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
+💡**Ejemplo 1:**
 
-## 5. Ecuaciones
-Para la edición de ecuaciones debe utilizar la etiqueta '$$' al comienzo y final de la ecuación para que la ecuación quede centrada ocupando una línea. Si se quiere que la ecuación quede integrada en el texto debe utilizar la etiqueta '$' al comienzo y final de la ecuación. Las ecuaciones pueden ser editadas utilizando el código LATEX, en el siguiente enlace encuentran un editor de ecuaciones que les genera el código. http://www.alciro.org/tools/matematicas/editor-ecuaciones.jsp . Sin embargo hay muchas otras herramientas que pueden utilizar para esto.
+![Pongo como ejemplo un sistema donde una barra "L" tiene una base de apoyo tipo 2 que realiza un movimiento angular sobre un plano de 2 dimesiones (vertical y horizontal) y esta mayormente inclinado hacia los positivos del eje horizontal el peso generando un movimiento de giro horario que es contraarestado por una cuerda a una superficie vertical en el afin superior de la barra, donde también se encuentra izada una masa sin tener fuerza externa que afecte el estado de este sistena](https://2.bp.blogspot.com/-2mz1LHXA5nU/WiYCbJguolI/AAAAAAAAAD4/6zX9vSmlyGYQqxv5oJJKf4PhKf3COI2RwCLcBGAs/s1600/maxresdefault.jpg)
 
-💡**Ejemplo 1:** si se va a representar la ecuación de la ley de Ohm se puede mostrar así $R=\frac{V}{I}$ o también,
-
-$$R=\frac{V}{I}$$
-
-## 6. Figuras
-Todas las figuras que incluya deben ser generadas por ustedes, **no utilizar las figuras de las presentaciones**. Para incluir figuras puede seguir los siguientes pasos:
-* Primero escribimos ![]().
-* Después escribimos, dentro de los corchetes, el texto alternativo. Este es opcional y solo entra en acción cuando no se puede cargar la imagen correctamente.
-* Después escribimos, dentro de los paréntesis, la ubicación del archivo (ya sea una url o una ubicación dentro de algun folder local). Se recomienda poner las imágenes en una carpeta que se llame imágenes dentro del repositorio github para que no tengan problemas al cargar las imágenes.
+Figura 1. Sistema estático #1
 
 💡**Ejemplo 2:**
 
-![Figura de prueba](images/plantilla/Captura2.PNG)
+![Se propone como segundo ejemplo de sistema dinámico una barra horizontal ubicada sobre una base que realiza el apoyo tipo 1 en el centro gravitacional de esta barra y en cada uno de sus extremos una masa con peso "X" y que en relación a la distancia de la base generan este punto de equilibrio estático](https://i.ytimg.com/vi/8ofBSp8Iu4o/hqdefault.jpg)
 
-Figura 1. Figura de prueba
+Figura 2. Sistema estático #2 
 
-Incluya la respectiva etiqueta a modo de descripción de la figura y mantenga numeración consecutiva para todas las figuras de la clase.
+En estos sistemas podemos deducir que una condición para que un sistema sea estático es que sus fuerzas sean igual a "0", es decir que las fuerzas que lo afectan tengan un equilibrio ecuacional entre ellas.
 
-## 7. Tablas
-En caso de necesitar la inclusión de tablas para organizar información se recomienda el uso de la herramienta del siguiente enlace https://www.tablesgenerator.com/markdown_tables , la cual permite organizar la información dentro de la tabla y genera el código markdown automáticamente:
+### 1.2 Sistemas dinámicos
+Por otro lado nos centraremos en los sistemas dinámicos que a diferencia de un sistema estático el comportamiento de las variables en un punto de tiempo "x", al ser exitado por un conjunto de reglas cambia su valor y/o forma dependiento el fenomeno o regla que lo altere, dicho esto se de puede deducir que los sistemas dinámicos son afectados a través del tiempo y que pueden observar en esta misma escala.
 
-💡**Ejemplo 3:** 
+💡**Ejemplo 1:**
 
-| **Resultado** | **x = número de intentos hasta primer éxito** |
-|---------------|-----------------------------------------------|
-|       S       |                       1                       |
-|       FS      |                       2                       |
-|      FFS      |                       3                       |
-|      ...      |                      ...                      |
-|    FFFFFFS    |                       7                       |
-|      ...      |                      ...                      |
+![Este sistema lo elegi para representar un sistema dinámico donde el cuerpo del sujeto sobre la pieza que forma un vertice el cual es el que esta en contacto con la superficie horizontal tiende a realizar un movimiento angular dependiendo hacia donde incline el cuerpo el sujeto se analizaran las fuerzas que realice para modelar matemáticamente este movimiento](https://static.docsity.com/documents_first_pages/2020/06/19/c369206730af96a79ac5bd08b3fa0c0b.png?v=1652022148)
 
-Tabla 1. Tabla de ejemplo
+Figura 1. Sistema dinámico #1
 
-Cada tabla debe llevar la etiqueta que describa su contenido y numeración consecutiva para todas las tablas
+💡**Ejemplo 2:**
 
-## 8. Código
-Teniendo en cuenta que el curso requiere del desarrollo de código matlab, c, c++ u otro. Si requiere incluir pequeños segmentos de código en los apuntes hágalos de la siguiente manera:
+![Popongo este otro ejemplo sencillo donde se aprecia una masa sobre una superficie inclinada, lo suficiente para suferar la fricción de la superficie y desarrollar un movimiento a favor de la gravedad](https://i.ytimg.com/vi/60tf50JImhU/maxresdefault.jpg)
 
-💡**Ejemplo 4:**
-```
-var sumar2 = function(numero) {
-  return numero + 2;
-}
-```
+Figura 2. Sistema dinámico #2 
 
-## 9. Ejercicios
-Deben agregar 2 ejercicios con su respectiva solución, referentes a los temas tratados en cada una de las clases. Para agregar estos, utilice la etiqueta #, es decir como un nuevo título dentro de la clase con la palabra 'Ejercicios'. Cada uno de los ejercicios debe estar numerado y con su respectiva solución inmediatamente despues del enunciado. Antes del subtitulo de cada ejercicio incluya el emoji 📚
+Los sistemas cuentan con 2 protagonistas los cuales definiremos de la siguiente manera:
 
-## 10. Conclusiones
-Agregue unas breves conclusiones sobre los temas trabajados en cada clase, puede ser a modo de resumen de lo trabajado o a indicando lo aprendido en cada clase
+🔑 *Planta:* Son todos los recursos tangibles que hacen posible un proceso materializado.
 
-## 11. Referencias
-Agregue un subtítulo al final donde pueda poner todas las referencias consultadas incluyendo el origen o fuente de los ejercicios planteados. Tambien dentro del texto referencie los textos o artículos consultados y las figuras y tablas dentro de la explicación de las mismas.
+🔑 *Proceso:* Este se relaciona con el término algoritmo; ya que siguiendo unas instrucciones paso a paso permite que se lleve a cabo un objetivo.
+
+
+## 2. Modelos dinamicos
+Para el control de un sistema se hace necesario plantear un modelo matemático que operen variables en función del tiempo.
+
+ $$f(t)$$
+
+Se hace necesario incluir operaciones que cuantifiquen el cambio de estas variables a través del tiempo.
+
+ $$\frac{df(t)}{dt}$$
+
+## 3. Repaso cálculo diferencial
+
+### 3.1¿Qué es una derivada?
+🔑 *Derivada:* Es la pendiente de una linea recta que se superpone a una curva la cual es representada matemáticamente por una función y que mediante operaciones mide el cambio de esta relacionando la curva y la pendiente.
+
+
+![Esta grafíca que define la derivada me genera mayor comprensión ya que esta la descomposición en sus componentes rectangulares y las operaciones que se desarrollan para formular la pendiente](https://i.ytimg.com/vi/60tf50JImhU/maxresdefault.jpg](https://i.ytimg.com/vi/AA9esyjLazc/maxresdefault.jpg)
+
+Figura 2. Gráfica de de definición de derivada y modelo algebraico #2 
+
+💡**Ejemplo 1:**
+
+$$F(x)=x^{\frac{3}{2}}-x^{\frac{5}{3}}$$
+$$F(x)=\frac{3}{2}*x^{\frac{3}{2}-\frac{3}{2}}-\frac{5}{3}*x^{\frac{5}{3}-\frac{5}{3}}$$
+
+
+## Referencias
+1. https://ekuatio.com/calculo-de-funciones-derivadas-ejemplos-y-ejercicios-resueltos/
+2. https://www.docsity.com/es/sistemas-dinamicos-13/5671053/
+3. https://i.ytimg.com/vi/AA9esyjLazc/maxresdefault.jpg
+4. https://yosoytuprofe.20minutos.es/wp-content/uploads/2018/03/100derivadasresueltasyosoytuprofe.pdf
