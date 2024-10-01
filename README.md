@@ -64,7 +64,79 @@ Figura 2. Gráfica de de definición de derivada y modelo algebraico #2
 💡**Ejemplo 1:**
 
 $$F(x)=x^{\frac{3}{2}}-x^{\frac{5}{3}}$$
-$$F(x)=\frac{3}{2}*x^{\frac{3}{2}-\frac{3}{2}}-\frac{5}{3}*x^{\frac{5}{3}-\frac{5}{3}}$$
+
+
+$$F'(x)=\frac{3}{2}*x^{\frac{3}{2}-\frac{3}{2}}-\frac{5}{3}*x^{\frac{5}{3}-\frac{5}{3}}$$
+
+$$F'(x)=\frac{3}{2}*x^{\frac{1}{2}}-\frac{5}{3}*x^{\frac{2}{3}}$$
+
+*$$f'(x)=\frac{3}{2}*\sqrt{x}-\frac{5}{3}\sqrt[3]{x^{2}}$$*
+
+## 4. Modelos de ecuaciones diferenciales
+Las ecuaciones diferenciales son herramientas fundamentales en matemáticas y ciencias para modelar fenómenos que cambian en el tiempo o el espacio. 
+
+$$a_{1}\frac{d^{2}*F}{dt}+a_{2}\frac{dF}{dt}+a_{3}F=u(t)$$
+
+F=Salida del sistema
+U=Entrada del sistema
+
+El resultado de un sistema no es un número es una función.
+
+### 4.1 Características de una ecuación diferencial
+🔑 *Ecuación lineal:* Es una expresion matemática que establece una relación entre 2 variables de manera lineal, es decir, que su representación gráfica es una recta su forma de representación general es:
+
+
+$$ax+by=c$$
+
+
+*donde a,b y c son constantes*
+
+De una manera más simple se puede representar de la siguiente manera
+
+$$ax+b=0$$
+
+🔑 *Ecuación no lineal:* Una ecuación no lineal es una expresión matemática que involucra variables elevadas a potencias distintas de uno, o que incluye productos, raíces, o funciones no lineales.
+
+$$x^{2}+y^{2}=r^{2}$$
+
+🔑 *Ecuación Variante en el tiempo:* es una expresión matemática que describe un fenómeno que cambia a lo largo del tiempo.
+
+$$\frac{d^{2}x}{dt^{2}}=-g$$
+
+🔑 *Ecuación in-Variante en el tiempo:* es una expresión matemática que describe un sistema cuyo comportamiento o propiedades no cambian con el tiempo.
+
+$$F=m*a$$
+
+🔑 *Superposición:* Se refiere a la propiedad que establece, que, si y_{1}(t) y y_{2}(t) son soluciones de una ecuación diferencial lineal homogénea, entonces cualquier combinación lineal de estas soluciones también es una solución de la misma ecuación. En otras palabras:
+
+$$y(t)= C_{1}*y_{1}(t)$$
+
+## 5 MODELAMIENTO Y VALIDACIÓN
+
+Al aplicar leyes físicas a un modelo matemático de un sistema, se debetener encuentaq ue hay un nivelde incertidumbre en el resultado final, Es necesario validar el modelo con respecto al sistema físico comparandola salida del modelo con la salida de l modelo físico, sino es aceptablela diferenciase debe modificar el modelo hasta conseguir una diferencia aceptable.
+
+# TRANSFORMADA DE LAPLACE
+Es una herramienta matemática que se utiliza para transformar funciones de tiempo en funciones de una variable compleja 𝑠.
+
+$$ x(t)= X(𝑠)
+
+$$\mathscr{L}\{f(t)\}=\int_{t=0}^{\infty}f(t)e^{-st}dt$$
+
+donde:
+
+-𝐹(𝑠) es la transformada de Laplace de 𝑓(𝑡).
+-𝑠 es un número complejo que generalmente se expresa como 𝑠=𝜎+𝑗𝜔 , donde 
+-𝜎 y 𝜔 son reales, y 𝑗 es la unidad imaginaria.
+-La integral se evalúa desde 𝑡=0 hasta 𝑡=∞.
+
+La transformada de Laplace permite simplificar el análisis de sistemas lineales, facilitando la resolución de ecuaciones diferenciales al convertirlas en ecuaciones algebraicas en el dominio de 𝑠.
+
+## 1. Propiedades de transformada de laPlace
+
+Linealidad:
+
+$$\mathscr{L}\{C_1f(t)+C_2g(t)}=C_1\mathscr{L}\{f(t)}+C_2\mathscr{g(t)} , C_1,C_2 \epsilon                  
+                          \mathbb{R} $$
 
 
 ## Referencias
@@ -72,3 +144,4 @@ $$F(x)=\frac{3}{2}*x^{\frac{3}{2}-\frac{3}{2}}-\frac{5}{3}*x^{\frac{5}{3}-\frac{
 2. https://www.docsity.com/es/sistemas-dinamicos-13/5671053/
 3. https://i.ytimg.com/vi/AA9esyjLazc/maxresdefault.jpg
 4. https://yosoytuprofe.20minutos.es/wp-content/uploads/2018/03/100derivadasresueltasyosoytuprofe.pdf
+5. https://latex-tutorial.com/laplace-transform-symbol-latex/
